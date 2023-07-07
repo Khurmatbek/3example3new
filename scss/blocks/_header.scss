@@ -3,7 +3,7 @@
 // @use "veriables";
 .hero {
     background-image: url("/images/bg-mobile.png");
-    background-size: 100% 820px;
+    background-size: 100% 800px;
     background-position: center top;
     background-repeat: no-repeat;
 }
@@ -331,4 +331,24 @@ display: none;
     .hero__link-box {
         margin-bottom: 100px;
     }
+}
+@include media(1440px){
+    .hero {
+        background-image: url("/images/bg-mobile.png");
+        background-size: 100% 792px;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx)
+ { 
+.hero{
+ background-image:url("/images/bg-mobile@2x.png");
+}
 }
