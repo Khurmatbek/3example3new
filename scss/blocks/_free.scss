@@ -1,13 +1,12 @@
 @import "../mixins";
 
 .site-free {
-    background: #6B50FF;
+    background: #6b50ff;
     padding-top: 83px;
     padding-bottom: 83px;
 }
 
 .free__inner {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,18 +40,18 @@ form {
     width: 100%;
     margin-bottom: 10px;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .free__email {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     margin-right: 10px;
-    padding: 9px 18px;
+    padding: 16px;
     outline: none;
     border-radius: 32px;
     background-color: var(--main-text-color);
     border: 1px solid transparent;
-
 }
 
 .free__email::placeholder {
@@ -62,19 +61,18 @@ form {
     line-height: 150%;
     color: #505050;
 }
-.free__email:hover{
-border: 1px solid var(--main-link-bgcolor);
+.free__email:hover {
+    border: 1px solid var(--main-link-bgcolor);
 }
 
 .free__btn {
     display: inline-block;
     width: 132px;
-    padding: 8px 16px;
+    padding: 8px 15px;
     font-family: var(--main-roboto-familiy);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-   
     color: var(--main-link-bgcolor);
     background-color: var(--main-text-color);
     border-radius: 32px;
@@ -85,7 +83,6 @@ border: 1px solid var(--main-link-bgcolor);
     background: var(--main-link-bgcolor);
 
     color: var(--main-text-color-dr);
-
 }
 
 .free__desc-sec {
@@ -107,7 +104,6 @@ border: 1px solid var(--main-link-bgcolor);
     color: var(--main-text-color);
 }
 
-
 // --main-text-color: #FFFFFF;
 // --main-link-bgcolor: #FF007A;
 // --main-font-familiy: "Nunito";
@@ -119,25 +115,33 @@ border: 1px solid var(--main-link-bgcolor);
     .free__email {
         max-width: 242px;
         width: 100%;
+        padding: 15px 28px;
     }
-    .free__task-box{
+
+    .free__task-box {
         max-width: 341px;
         width: 100%;
     }
 }
 
-@include media (767px) {
+@include media(767px) {
     .needs__last {
         max-width: 700px;
         width: 100%;
     }
-    .free__forma{
+    .free__forma {
         margin: 0;
         margin-bottom: 24px;
     }
-    .free__task-box{
+    .free__task-box {
         max-width: 513px;
         width: 100%;
     }
-
+}
+@include media(900px)
+{
+    .free__email {
+        max-width: 365px;
+        width: 100%;
+    }
 }

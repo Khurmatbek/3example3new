@@ -512,6 +512,12 @@ body {
   background-color: #211F25;
 }
 
+.dark .new__hidden-link:hover {
+  background-color: var(--main-link-bgcolor);
+  color: var(--main-text-color-dr);
+  transition: 0.5s ease;
+}
+
 .open {
   position: fixed;
 }
@@ -1417,7 +1423,7 @@ body {
   }
 }
 .site-free {
-  background: #6B50FF;
+  background: #6b50ff;
   padding-top: 83px;
   padding-bottom: 83px;
 }
@@ -1460,9 +1466,10 @@ form {
 }
 
 .free__email {
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   margin-right: 10px;
-  padding: 9px 18px;
+  padding: 16px;
   outline: none;
   border-radius: 32px;
   background-color: var(--main-text-color);
@@ -1492,7 +1499,7 @@ form {
 .free__btn {
   display: inline-block;
   width: 132px;
-  padding: 8px 16px;
+  padding: 8px 15px;
   font-family: var(--main-roboto-familiy);
   font-weight: 400;
   font-size: 16px;
@@ -1531,6 +1538,7 @@ form {
   .free__email {
     max-width: 242px;
     width: 100%;
+    padding: 15px 28px;
   }
   .free__task-box {
     max-width: 341px;
@@ -1548,6 +1556,12 @@ form {
   }
   .free__task-box {
     max-width: 513px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .free__email {
+    max-width: 365px;
     width: 100%;
   }
 }
@@ -1596,6 +1610,12 @@ form {
   border-radius: 32px;
   border: 1px solid var(--main-link-bgcolor);
   text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.new__hidden-link:hover {
+  background-color: var(--main-link-bgcolor);
+  color: var(--main-text-color-dr);
 }
 
 .new__list {
@@ -2001,6 +2021,12 @@ time {
   }
   .footer__email {
     margin: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 .slick-prev {

@@ -68,3 +68,8 @@ background-color: #000000;
  .new__link-sec{
 background-color: #211F25;;
 }
+ .dark .new__hidden-link:hover{
+    background-color: var(--main-link-bgcolor);
+    color: var(--main-text-color-dr);
+    transition: 0.5s ease;
+ } 
